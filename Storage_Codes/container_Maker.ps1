@@ -1,6 +1,7 @@
 #code PS1 to make new container
-
+$Storage_name=$args[0]
 $containerName = "quickstartblobs3"
+$ResourceGroup="orelrahumubuntu_group"
 $storageAcc=Get-AzStorageAccount -ResourceGroupName $ResourceGroup -Name $Storage_name
 $ctx = $storageAcc.Context
 try 
