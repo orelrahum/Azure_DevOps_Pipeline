@@ -35,7 +35,7 @@
             "value": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/orelrahumubuntu_group/providers/Microsoft.Network/virtualNetworks/orelrahumubuntu_group-vnet"
         },
         "publicIpAddressName": {
-            "value": "orelrahumserverubuntuip634"
+            "value": "orelrahumserverubuntu-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"

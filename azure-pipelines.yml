@@ -51,7 +51,7 @@ steps:
 - task: PowerShell@2
   inputs:
     filePath: 'Storage_Codes\Storage_Maker.ps1'
-    arguments: 'orelrahumstorage1ubuntu Storage2_Parameters.json'
+    arguments: 'orelrahumstorage2ubuntu Storage2_Parameters.json'
 
 #Make Storage 2 container
 - task: PowerShell@2
