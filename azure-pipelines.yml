@@ -16,7 +16,7 @@ pool: Default
 
 
 
-#make resources group 
+#make resources group
 steps:
 - task: PowerShell@2
   inputs:
@@ -59,7 +59,7 @@ steps:
     filePath: 'Storage_Codes\container_Maker.ps1'
     arguments: 'orelrahumstorage2ubuntu'
 
-#Make ubuntu server
+#Make ubuntu server (use ready os which already login to azcopy and az)
 - task: PowerShell@2
   inputs:
     filePath: 'Server_Codes\Server_Maker.ps1'
