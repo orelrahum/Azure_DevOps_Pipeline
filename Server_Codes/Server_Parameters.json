@@ -6,7 +6,7 @@
             "value": "northeurope"
         },
         "networkInterfaceName": {
-            "value": "orelrahumserverub240"
+            "value": "orelrahumserverub734"
         },
         "networkSecurityGroupName": {
             "value": "orelrahumserverubuntu-nsg"
@@ -32,11 +32,11 @@
             "value": "default"
         },
         "virtualNetworkName": {
-            "value": "orelrahumserverubuntu_group_12271311-vnet"
+            "value": "orelrahumserverubuntu_group-vnet"
         },
         "addressPrefixes": {
             "value": [
-                "10.14.0.0/16"
+                "10.10.0.0/16"
             ]
         },
         "subnets": {
@@ -44,7 +44,7 @@
                 {
                     "name": "default",
                     "properties": {
-                        "addressPrefix": "10.14.0.0/24"
+                        "addressPrefix": "10.10.0.0/24"
                     }
                 }
             ]
@@ -65,7 +65,7 @@
             "value": "orelrahumserverubuntu"
         },
         "virtualMachineRG": {
-            "value": "orelrahumserverubuntu_group_12271311"
+            "value": "orelrahumserverubuntu_group"
         },
         "osDiskType": {
             "value": "Premium_LRS"

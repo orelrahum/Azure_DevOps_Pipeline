@@ -147,7 +147,7 @@
                         }
                     },
                     "imageReference": {
-                        "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/orelrahumserverubuntu_group/providers/Microsoft.Compute/images/orelrahumserverubuntutemplate-image"
+                        "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/orelrahumubuntu_group/providers/Microsoft.Compute/images/orelrahumserverubuntutemplate-image"
                     }
                 },
                 "networkProfile": {
