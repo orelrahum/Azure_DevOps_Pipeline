@@ -6,7 +6,7 @@
             "value": "eastus"
         },
         "storageAccountName": {
-            "value": "orelrahumstorage2"
+            "value": "orelrahumstorage2ubuntu"
         },
         "accountType": {
             "value": "Standard_RAGRS"
