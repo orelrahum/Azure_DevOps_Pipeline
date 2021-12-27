@@ -16,7 +16,7 @@ pipeline process:
 
 
 # configurations deetails :
-Resource group : orelrahumubuntu
+Resource group : orelrahumubuntu_group
 
 Storage names : orelrahumstorage1ubuntu , orelrahumstorage2ubuntu 
 
