@@ -8,11 +8,11 @@ pipeline trigger : change on my_app.py in main branch
 
 pipeline process:
 1. Setting up 2 storage servers by ARM TEMPLATE file
-2. Setting up windows server by ARM TEMPLATE file
-3. get windows server ip (from Section 2)
+2. Setting up ubuntu server by ARM TEMPLATE file
+3. get ubuntu server ip (from Section 2)
 4. login by SSH 
-5. download create_upload_copy.ps1 from this reposity to windows server
-6. Run script that will create, upload 100 blobs to A and B (Create already in section 1) on windows server
+5. download create_upload_copy.ps1 from this reposity to ubuntu server
+6. Run script that will create, upload 100 blobs to A and copy 100 blobs from B (Create already in section 1) on windows server
 
 
 # configurations deetails :
