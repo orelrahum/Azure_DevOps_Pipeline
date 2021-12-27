@@ -8,11 +8,12 @@ pipeline trigger : change on my_app.py in main branch
 
 pipeline process:
 1. Setting up 2 storage servers by ARM TEMPLATE file
-2. Setting up ubuntu server by ARM TEMPLATE file
-3. get ubuntu server ip (from Section 2)
-4. login by SSH 
-5. download create_upload_copy.ps1 from this reposity to ubuntu server
-6. Run script that will create, upload 100 blobs to A and copy 100 blobs from B (Create already in section 1) on ubuntu server
+2. Add "quickstartblobs3" Container for storages servers 
+3. Setting up ubuntu server by ARM TEMPLATE file
+4. get ubuntu server ip (from Section 2)
+5. login by SSH 
+6. download create_upload_copy.ps1 from this reposity to ubuntu server
+7. Run script that will create, upload 100 blobs to A and copy 100 blobs from B (Create already in section 1) on ubuntu server
 
 
 # configurations deetails :
