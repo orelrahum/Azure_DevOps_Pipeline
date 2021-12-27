@@ -38,7 +38,7 @@ accountkey1=`az storage account keys list -g orelrahumubuntu_group -n orelrahums
 echo $accountkey1
 SASkey1=`az storage container generate-sas --account-key $accountkey1 --account-name orelrahumstorage1ubuntu --expiry 2022-01-01 --name quickstartblobs3 --permissions dlrw`
 echo $SASkey1
-storage1url="https://orelrahumstorage1ubuntu.blob.core.windows.net/quickstartblobs3?${SASkey1:1:-2}"
+storage1url="https://orelrahumstorage1ubuntu.blob.core.windows.net/quickstartblobs3?${SASkey1:1:-1}"
 echo $storage1url
 
 
@@ -56,7 +56,7 @@ accountkey2=`az storage account keys list -g orelrahumubuntu_group -n orelrahums
 echo $accountkey2
 SASkey2=`az storage container generate-sas --account-key $accountkey2 --account-name orelrahumstorage2ubuntu --expiry 2022-01-01 --name quickstartblobs3 --permissions dlrw`
 echo $SASkey2
-storage2url="https://orelrahumstorage2ubuntu.blob.core.windows.net/quickstartblobs3?${SASkey2:1:-2}"
+storage2url="https://orelrahumstorage2ubuntu.blob.core.windows.net/quickstartblobs3?${SASkey2:1:-1}"
 echo $storage2url
 
 
