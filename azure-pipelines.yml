@@ -20,14 +20,14 @@ steps:
 - task: PowerShell@2
   inputs:
     filePath: 'Storage_Codes\Storage_Maker.ps1'
-    arguments: 'orelrahumstorage1 Storage1_Parameters.json'
+    arguments: 'orelrahumstorage1ubuntu Storage1_Parameters.json'
 
 
 #Make Storage 2
 - task: PowerShell@2
   inputs:
     filePath: 'Storage_Codes\Storage_Maker.ps1'
-    arguments: 'orelrahumstorage2 Storage2_Parameters.json'
+    arguments: 'orelrahumstorage1ubuntu Storage2_Parameters.json'
 
 
 #Make windows server

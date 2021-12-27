@@ -6,15 +6,15 @@
             "value": "northeurope"
         },
         "networkInterfaceName": {
-            "value": "orelrahumserver306"
+            "value": "orelrahumserverub240"
         },
         "networkSecurityGroupName": {
-            "value": "orelrahumserver-nsg"
+            "value": "orelrahumserverubuntu-nsg"
         },
         "networkSecurityGroupRules": {
             "value": [
                 {
-                    "name": "RDP",
+                    "name": "SSH",
                     "properties": {
                         "priority": 300,
                         "protocol": "TCP",
@@ -23,46 +23,7 @@
                         "sourceAddressPrefix": "*",
                         "sourcePortRange": "*",
                         "destinationAddressPrefix": "*",
-                        "destinationPortRange": "3389"
-                    }
-                },
-                {
-                    "name": "SSH",
-                    "properties": {
-                        "priority": 320,
-                        "protocol": "TCP",
-                        "access": "Allow",
-                        "direction": "Inbound",
-                        "sourceAddressPrefix": "*",
-                        "sourcePortRange": "*",
-                        "destinationAddressPrefix": "*",
                         "destinationPortRange": "22"
-                    }
-                },
-                {
-                    "name": "HTTPS",
-                    "properties": {
-                        "priority": 340,
-                        "protocol": "TCP",
-                        "access": "Allow",
-                        "direction": "Inbound",
-                        "sourceAddressPrefix": "*",
-                        "sourcePortRange": "*",
-                        "destinationAddressPrefix": "*",
-                        "destinationPortRange": "443"
-                    }
-                },
-                {
-                    "name": "HTTP",
-                    "properties": {
-                        "priority": 360,
-                        "protocol": "TCP",
-                        "access": "Allow",
-                        "direction": "Inbound",
-                        "sourceAddressPrefix": "*",
-                        "sourcePortRange": "*",
-                        "destinationAddressPrefix": "*",
-                        "destinationPortRange": "80"
                     }
                 }
             ]
@@ -71,11 +32,11 @@
             "value": "default"
         },
         "virtualNetworkName": {
-            "value": "orelrahumserver_group_12271231-vnet"
+            "value": "orelrahumserverubuntu_group_12271311-vnet"
         },
         "addressPrefixes": {
             "value": [
-                "10.12.0.0/16"
+                "10.14.0.0/16"
             ]
         },
         "subnets": {
@@ -83,13 +44,13 @@
                 {
                     "name": "default",
                     "properties": {
-                        "addressPrefix": "10.12.0.0/24"
+                        "addressPrefix": "10.14.0.0/24"
                     }
                 }
             ]
         },
         "publicIpAddressName": {
-            "value": "orelrahumserver-ip"
+            "value": "orelrahumserverubuntu-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -98,13 +59,13 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "orelrahumserver"
+            "value": "orelrahumserverubuntu"
         },
         "virtualMachineComputerName": {
-            "value": "orelrahumserver"
+            "value": "orelrahumserverubuntu"
         },
         "virtualMachineRG": {
-            "value": "orelrahumserver_group_12271231"
+            "value": "orelrahumserverubuntu_group_12271311"
         },
         "osDiskType": {
             "value": "Premium_LRS"
@@ -116,13 +77,7 @@
             "value": "orelrahum"
         },
         "adminPassword": {
-            "value": "Test12345678"
-        },
-        "patchMode": {
-            "value": "AutomaticByOS"
-        },
-        "enableHotpatching": {
-            "value": false
+            "value": null
         }
     }
 }

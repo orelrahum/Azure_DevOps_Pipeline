@@ -55,12 +55,6 @@
         },
         "adminPassword": {
             "type": "secureString"
-        },
-        "patchMode": {
-            "type": "string"
-        },
-        "enableHotpatching": {
-            "type": "bool"
         }
     },
     "variables": {
@@ -153,7 +147,7 @@
                         }
                     },
                     "imageReference": {
-                        "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/orelrahum/providers/Microsoft.Compute/images/orelrahumserver-image-fix-az"
+                        "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/orelrahumserverubuntu_group/providers/Microsoft.Compute/images/orelrahumserverubuntu-image-20211227130805"
                     }
                 },
                 "networkProfile": {
@@ -167,12 +161,9 @@
                     "computerName": "[parameters('virtualMachineComputerName')]",
                     "adminUsername": "[parameters('adminUsername')]",
                     "adminPassword": "[parameters('adminPassword')]",
-                    "windowsConfiguration": {
-                        "enableAutomaticUpdates": true,
-                        "provisionVmAgent": true,
+                    "linuxConfiguration": {
                         "patchSettings": {
-                            "enableHotpatching": "[parameters('enableHotpatching')]",
-                            "patchMode": "[parameters('patchMode')]"
+                            "patchMode": "ImageDefault"
                         }
                     }
                 },
