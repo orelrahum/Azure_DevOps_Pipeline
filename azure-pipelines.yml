@@ -13,11 +13,27 @@ trigger:
      - my_app.py
 
 pool: Default
-#make resources group
+
+
+
+#make resources group 
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your PowerShell commands here.
+      try
+      {
+      New-AzResourceGroup orelrahumubuntu_group "northeurope"
+      }
+      catch 
+      {
+      Write-Host "Aleardy have resourcegroup"
 
 #Task 4
 #Make Storage 1
-steps:
+
 - task: PowerShell@2
   inputs:
     filePath: 'Storage_Codes\Storage_Maker.ps1'
