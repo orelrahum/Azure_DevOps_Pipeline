@@ -1,0 +1,7 @@
+#Dashboard parameters: 
+1. CPU avarage -orelubuntuserver ,Ubuntu server
+2. Network avarage -orelubuntuserver ,Ubuntu server
+3. Transactions sum - orelteststorage1, Storage account
+4. Transactions sum - orelteststorage2, Storage account
+
+![orelrahum dashboard](https://dev.azure.com/Orelrahum8/fb5604e4-5a67-475b-909a-cb7bee6ca465/_apis/git/repositories/ba98f144-6fba-404a-9e1f-9e6054c8b1c9/items?path=/Dashboard/orelrahum%20dashboard%20exmpale.PNG&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0)

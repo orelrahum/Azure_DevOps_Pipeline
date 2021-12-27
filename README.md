@@ -1,20 +1,30 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Azure DevOps Project 
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+![example image](https://cdn.sanity.io/images/l7p1u5mb/production/655cdf311a4eedc8d0f2919b7f0c054dcb154a9d-379x110.svg?q=75&fit=max&auto=format)
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+# The logic in my Pipeline
+pipeline trigger : change on my_app.py in main branch
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+pipeline process:
+1. Setting up 2 storage servers by ARM TEMPLATE file
+2. Setting up windows server by ARM TEMPLATE file
+3. get windows server ip (from Section 2)
+4. login by SSH 
+5. download create_upload_copy.ps1 from this reposity to windows server
+6. Run script that will create, upload 100 blobs to A and B (Create already in section 1) on windows server
+
+
+# configurations deetails :
+Resource group : orelrahumubuntu
+
+Storage names : orelrahumstorage1ubuntu , orelrahumstorage2ubuntu 
+
+ containerName = "quickstartblobs3"
+
+Server Name : orelrahumserverubuntu
+
+ user: orelrahum
+ 
+ pass: **********
+

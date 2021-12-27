@@ -1,0 +1,49 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+#
+
+trigger: 
+ branches:
+   include:
+     - main
+ paths:
+   include:
+     - my_app.py
+
+pool: Default
+
+#Task 4
+#Make Storage 1
+steps:
+- task: PowerShell@2
+  inputs:
+    filePath: 'Storage_Codes\Storage_Maker.ps1'
+    arguments: 'orelrahumstorage1 Storage1_Parameters.json'
+
+
+#Make Storage 2
+- task: PowerShell@2
+  inputs:
+    filePath: 'Storage_Codes\Storage_Maker.ps1'
+    arguments: 'orelrahumstorage2 Storage2_Parameters.json'
+
+
+#Make windows server
+- task: PowerShell@2
+  inputs:
+    filePath: 'Server_Codes\Server_Maker.ps1'
+
+
+#Task5
+
+#get orelrahumserver-ip from Task4
+#Connect to orelrahumserver by SSH
+#download create_upload_copy.ps1 
+#run create_upload_copy.ps1 in server
+
+- task: Bash@3
+  inputs:
+    filePath: 'Create_upload_copy\connect_server.bash'
+
