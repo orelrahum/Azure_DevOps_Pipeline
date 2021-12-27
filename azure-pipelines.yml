@@ -29,7 +29,7 @@ steps:
     filePath: 'Storage_Codes\container_Maker.ps1'
     arguments: 'orelrahumstorage1ubuntu'
 
-#Make Storage 2 + container
+#Make Storage 2
 - task: PowerShell@2
   inputs:
     filePath: 'Storage_Codes\Storage_Maker.ps1'
@@ -39,7 +39,7 @@ steps:
 - task: PowerShell@2
   inputs:
     filePath: 'Storage_Codes\container_Maker.ps1'
-    arguments: 'orelrahumstorage1ubuntu'
+    arguments: 'orelrahumstorage2ubuntu'
 
 #Make ubuntu server
 - task: PowerShell@2
