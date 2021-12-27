@@ -10,10 +10,14 @@
 #Move AzCopy to the destination you want to store it
 #sudo cp ./azcopy_linux_amd64_*/azcopy /usr/bin/
 
+
 #login to azcopy
 #sudo azcopy login --tenant-id "72f988bf-86f1-41af-91ab-2d7cd011db47"
 
 ######################################################################################
+#install az
+#curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
 #login az 
 #az login --tenant 72f988bf-86f1-41af-91ab-2d7cd011db47
 
