@@ -6,10 +6,10 @@
             "value": "northeurope"
         },
         "networkInterfaceName": {
-            "value": "orelrahumserverub966"
+            "value": "orelrahumserverub425"
         },
         "networkSecurityGroupName": {
-            "value": "orelrahumserverubuntunsg738"
+            "value": "orelrahumserverubuntu-nsg"
         },
         "networkSecurityGroupRules": {
             "value": [
@@ -31,11 +31,26 @@
         "subnetName": {
             "value": "default"
         },
-        "virtualNetworkId": {
-            "value": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/orelrahumubuntu_group/providers/Microsoft.Network/virtualNetworks/orelrahumserverubuntu_group-vnet"
+        "virtualNetworkName": {
+            "value": "orelrahumubuntu_group-vnet"
+        },
+        "addressPrefixes": {
+            "value": [
+                "10.8.0.0/16"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "default",
+                    "properties": {
+                        "addressPrefix": "10.8.0.0/24"
+                    }
+                }
+            ]
         },
         "publicIpAddressName": {
-            "value": "orelrahumserverubuntuip580"
+            "value": "orelrahumserverubuntu-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"

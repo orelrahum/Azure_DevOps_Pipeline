@@ -17,8 +17,14 @@
         "subnetName": {
             "type": "string"
         },
-        "virtualNetworkId": {
+        "virtualNetworkName": {
             "type": "string"
+        },
+        "addressPrefixes": {
+            "type": "array"
+        },
+        "subnets": {
+            "type": "array"
         },
         "publicIpAddressName": {
             "type": "string"
@@ -53,8 +59,8 @@
     },
     "variables": {
         "nsgId": "[resourceId(resourceGroup().name, 'Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroupName'))]",
-        "vnetId": "[parameters('virtualNetworkId')]",
-        "vnetName": "[last(split(variables('vnetId'), '/'))]",
+        "vnetName": "[parameters('virtualNetworkName')]",
+        "vnetId": "[resourceId(resourceGroup().name,'Microsoft.Network/virtualNetworks', parameters('virtualNetworkName'))]",
         "subnetRef": "[concat(variables('vnetId'), '/subnets/', parameters('subnetName'))]"
     },
     "resources": [
@@ -65,6 +71,7 @@
             "location": "[parameters('location')]",
             "dependsOn": [
                 "[concat('Microsoft.Network/networkSecurityGroups/', parameters('networkSecurityGroupName'))]",
+                "[concat('Microsoft.Network/virtualNetworks/', parameters('virtualNetworkName'))]",
                 "[concat('Microsoft.Network/publicIpAddresses/', parameters('publicIpAddressName'))]"
             ],
             "properties": {
@@ -94,6 +101,18 @@
             "location": "[parameters('location')]",
             "properties": {
                 "securityRules": "[parameters('networkSecurityGroupRules')]"
+            }
+        },
+        {
+            "name": "[parameters('virtualNetworkName')]",
+            "type": "Microsoft.Network/virtualNetworks",
+            "apiVersion": "2020-11-01",
+            "location": "[parameters('location')]",
+            "properties": {
+                "addressSpace": {
+                    "addressPrefixes": "[parameters('addressPrefixes')]"
+                },
+                "subnets": "[parameters('subnets')]"
             }
         },
         {
@@ -128,7 +147,7 @@
                         }
                     },
                     "imageReference": {
-                        "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/my_home_test/providers/Microsoft.Compute/images/orelrahumserverubuntutemplate-image-new"
+                        "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/orelrahumubuntu_group/providers/Microsoft.Compute/images/orelrahumserverubuntutemplate-image-new2"
                     }
                 },
                 "networkProfile": {
