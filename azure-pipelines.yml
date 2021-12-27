@@ -15,7 +15,7 @@ trigger:
 pool: Default
 
 
-
+######################################################################################
 #make resources group (added in note bc resources already ready for costum ubuntu os)
 steps:
 #- task: PowerShell@2
@@ -31,42 +31,46 @@ steps:
 #      {
 #      Write-Host "Aleardy have resourcegroup"
 #      }
+######################################################################################
+#1 min timer to make sure resources group done
+#- task: Delay@1
+#  inputs:
+#    delayForMinutes: '1'
 
+######################################################################################
 #Task 4
 #Make Storage 1
-
 - task: PowerShell@2
   inputs:
     filePath: 'Storage_Codes\Storage_Maker.ps1'
     arguments: 'orelrahumstorage1ubuntu Storage1_Parameters.json'
-
-
-#Make Storage 1 container
-- task: PowerShell@2
-  inputs:
-    filePath: 'Storage_Codes\container_Maker.ps1'
-    arguments: 'orelrahumstorage1ubuntu'
-
 #Make Storage 2
 - task: PowerShell@2
   inputs:
     filePath: 'Storage_Codes\Storage_Maker.ps1'
     arguments: 'orelrahumstorage2ubuntu Storage2_Parameters.json'
 
+
+######################################################################################
+#Make Storage 1 container
+- task: PowerShell@2
+  inputs:
+    filePath: 'Storage_Codes\container_Maker.ps1'
+    arguments: 'orelrahumstorage1ubuntu'
 #Make Storage 2 container
 - task: PowerShell@2
   inputs:
     filePath: 'Storage_Codes\container_Maker.ps1'
     arguments: 'orelrahumstorage2ubuntu'
 
+######################################################################################
 #Make ubuntu server (use ready os which already login to azcopy and az)
 - task: PowerShell@2
   inputs:
     filePath: 'Server_Codes\Server_Maker.ps1'
 
-
+######################################################################################
 #Task5
-
 #get orelrahumserverubuntu-ip from Task4
 #Connect to orelrahumserverubuntu by SSH
 #download create_upload_copy.ps1 
