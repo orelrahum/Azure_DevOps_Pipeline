@@ -12,7 +12,7 @@ pipeline process:
 3. get ubuntu server ip (from Section 2)
 4. login by SSH 
 5. download create_upload_copy.ps1 from this reposity to ubuntu server
-6. Run script that will create, upload 100 blobs to A and copy 100 blobs from B (Create already in section 1) on windows server
+6. Run script that will create, upload 100 blobs to A and copy 100 blobs from B (Create already in section 1) on ubuntu server
 
 
 # configurations deetails :
