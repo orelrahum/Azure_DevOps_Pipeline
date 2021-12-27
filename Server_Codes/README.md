@@ -2,4 +2,4 @@
 
 make Storage account by ARM template and ARM parameters
 
-![example image](https://qph.fs.quoracdn.net/main-qimg-9f7150278f110adc080ba66b29b5bd01)
+![example image](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,c_fill,w_1000,h_500/https://ubuntu.com/wp-content/uploads/2fed/Azure.png)
