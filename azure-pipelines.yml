@@ -30,6 +30,7 @@ steps:
       catch 
       {
       Write-Host "Aleardy have resourcegroup"
+      }
 
 #Task 4
 #Make Storage 1
