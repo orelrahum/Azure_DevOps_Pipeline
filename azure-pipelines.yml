@@ -25,7 +25,7 @@ steps:
       # Write your PowerShell commands here.
       try
       {
-      New-AzResourceGroup orelrahumubuntu_group "northeurope"
+      New-AzResourceGroup orelrahumubuntu_group "northeurope" -ErrorAction Stop
       }
       catch 
       {
