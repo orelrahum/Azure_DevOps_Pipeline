@@ -13,6 +13,7 @@ trigger:
      - my_app.py
 
 pool: Default
+#make resources group
 
 #Task 4
 #Make Storage 1
@@ -49,10 +50,10 @@ steps:
 
 #Task5
 
-#get orelrahumserver-ip from Task4
-#Connect to orelrahumserver by SSH
+#get orelrahumserverubuntu-ip from Task4
+#Connect to orelrahumserverubuntu by SSH
 #download create_upload_copy.ps1 
-#run create_upload_copy.ps1 in server
+#run create_upload_copy.ps1 on server
 
 - task: Bash@3
   inputs:
