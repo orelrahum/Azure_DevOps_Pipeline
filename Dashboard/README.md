@@ -1,6 +1,6 @@
 #Dashboard parameters: 
-1. CPU avarage -orelubuntuserver ,Ubuntu server
-2. Network avarage -orelubuntuserver ,Ubuntu server
+1. CPU avarage - orelrahumserverubuntu ,Ubuntu server
+2. Network sum - orelrahumserverubuntu ,Ubuntu server
 3. Transactions sum - orelteststorage1, Storage account
 4. Transactions sum - orelteststorage2, Storage account
 
