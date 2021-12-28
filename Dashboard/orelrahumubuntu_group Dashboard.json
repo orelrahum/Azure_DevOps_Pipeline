@@ -30,18 +30,18 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/my_home_test/providers/Microsoft.Compute/virtualMachines/orelubuntuserver"
+                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/orelrahumubuntu_group/providers/Microsoft.Compute/virtualMachines/orelrahumserverubuntu"
                           },
-                          "name": "CPU Credits Remaining",
+                          "name": "Percentage CPU",
                           "aggregationType": 4,
                           "namespace": "microsoft.compute/virtualmachines",
                           "metricVisualization": {
-                            "displayName": "CPU Credits Remaining",
-                            "resourceDisplayName": "orelubuntuserver"
+                            "displayName": "Percentage CPU",
+                            "resourceDisplayName": "orelrahumserverubuntu"
                           }
                         }
                       ],
-                      "title": "Avg CPU Credits Remaining for orelubuntuserver",
+                      "title": "Avg Percentage CPU for orelrahumserverubuntu",
                       "titleKind": 1,
                       "visualization": {
                         "chartType": 2,
@@ -70,7 +70,7 @@
           },
           "1": {
             "position": {
-              "x": 6,
+              "x": 7,
               "y": 0,
               "colSpan": 6,
               "rowSpan": 4
@@ -94,21 +94,21 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/my_home_test/providers/Microsoft.Compute/virtualMachines/orelubuntuserver"
+                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/orelrahumubuntu_group/providers/Microsoft.Compute/virtualMachines/orelrahumserverubuntu"
                           },
                           "name": "Network In Total",
                           "aggregationType": 1,
                           "namespace": "microsoft.compute/virtualmachines",
                           "metricVisualization": {
                             "displayName": "Network In Total",
-                            "resourceDisplayName": "orelubuntuserver"
+                            "resourceDisplayName": "orelrahumserverubuntu"
                           }
                         }
                       ],
-                      "title": "Sum Network In Total for orelubuntuserver",
+                      "title": "Sum Network In Total for orelrahumserverubuntu",
                       "titleKind": 1,
                       "visualization": {
-                        "chartType": 5,
+                        "chartType": 2,
                         "legendVisualization": {
                           "isVisible": true,
                           "position": 2,
@@ -124,7 +124,6 @@
                             "axisType": 1
                           }
                         },
-                        "sortIndex": 1,
                         "disablePinning": true
                       }
                     }
@@ -159,7 +158,7 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/my_home_test/providers/Microsoft.Storage/storageAccounts/orelteststorage1"
+                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/orelrahumubuntu_group/providers/Microsoft.Storage/storageAccounts/orelrahumstorage1ubuntu"
                           },
                           "name": "Transactions",
                           "aggregationType": 1,
@@ -169,10 +168,10 @@
                           }
                         }
                       ],
-                      "title": "Sum Transactions for orelteststorage1",
+                      "title": "Sum Transactions for orelrahumstorage1ubuntu",
                       "titleKind": 1,
                       "visualization": {
-                        "chartType": 1,
+                        "chartType": 2,
                         "legendVisualization": {
                           "isVisible": true,
                           "position": 2,
@@ -198,7 +197,7 @@
           },
           "3": {
             "position": {
-              "x": 6,
+              "x": 7,
               "y": 4,
               "colSpan": 6,
               "rowSpan": 4
@@ -222,7 +221,7 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/my_home_test/providers/Microsoft.Storage/storageAccounts/orelteststorage2"
+                            "id": "/subscriptions/a8108c2b-496c-424d-8347-ecc8afb6384c/resourceGroups/orelrahumubuntu_group/providers/Microsoft.Storage/storageAccounts/orelrahumstorage2ubuntu"
                           },
                           "name": "Transactions",
                           "aggregationType": 1,
@@ -232,10 +231,10 @@
                           }
                         }
                       ],
-                      "title": "Sum Transactions for orelteststorage2",
+                      "title": "Sum Transactions for orelrahumstorage2ubuntu",
                       "titleKind": 1,
                       "visualization": {
-                        "chartType": 3,
+                        "chartType": 2,
                         "legendVisualization": {
                           "isVisible": true,
                           "position": 2,
@@ -282,17 +281,17 @@
               "model": {
                 "format": "utc",
                 "granularity": "auto",
-                "relative": "30d"
+                "relative": "24h"
               },
               "displayCache": {
                 "name": "UTC Time",
-                "value": "Past 30 days"
+                "value": "Past 24 hours"
               },
               "filteredPartIds": [
-                "StartboardPart-MonitorChartPart-884f6555-cdfa-4061-8b5b-d1cabe5fe39b",
-                "StartboardPart-MonitorChartPart-884f6555-cdfa-4061-8b5b-d1cabe5fe3ab",
-                "StartboardPart-MonitorChartPart-884f6555-cdfa-4061-8b5b-d1cabe5fe3b7",
-                "StartboardPart-MonitorChartPart-884f6555-cdfa-4061-8b5b-d1cabe5fe3c3"
+                "StartboardPart-MonitorChartPart-9afb54b0-23f9-4d94-90a0-90387a7f815d",
+                "StartboardPart-MonitorChartPart-9afb54b0-23f9-4d94-90a0-90387a7f819e",
+                "StartboardPart-MonitorChartPart-9afb54b0-23f9-4d94-90a0-90387a7f81aa",
+                "StartboardPart-MonitorChartPart-9afb54b0-23f9-4d94-90a0-90387a7f81b6"
               ]
             }
           }
@@ -300,11 +299,11 @@
       }
     }
   },
-  "name": "orelrahum dashboard",
+  "name": "orelrahumubuntu_group",
   "type": "Microsoft.Portal/dashboards",
   "location": "INSERT LOCATION",
   "tags": {
-    "hidden-title": "orelrahum dashboard"
+    "hidden-title": "orelrahumubuntu_group"
   },
   "apiVersion": "2015-08-01-preview"
 }
